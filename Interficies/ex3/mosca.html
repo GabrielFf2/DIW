@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UnaMoscaVolavaPerLaLlum</title>
+</head>
+<body>
+<h1>Una Mosca volava per la llum </h1>
+<p id="lletra"></p>
+<script>
+    const lletraOriginal = "Una mosca volava per la llum";
+    const ref = document.querySelector("#lletra");
+    const lletraCanvi = ["a", "e", "i", "o", "u"];
+    for (let x = 0; x < lletraCanvi.length; x++) {
+        let novaLletra = "";
+        for (let j = 0; j < lletraOriginal.length; j++) {
+            let vocal = false;
+            for (let r = 0; r < lletraCanvi.length; r++) {
+                vocal = lletraOriginal[j].toLowerCase() === lletraCanvi[r];
+                if (vocal) break;
+            }
+            if (vocal) {
+                novaLletra += lletraCanvi[x];
+            } else {
+                novaLletra += lletraOriginal[j];
+            }
+        }
+        ref.innerHTML += novaLletra + "<br>";
+    }
+</script>
+</body>
+</html>

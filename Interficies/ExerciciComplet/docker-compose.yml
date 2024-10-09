@@ -1,0 +1,22 @@
+name: DIW-ExComplet
+services:
+  gulp:
+    build:
+      context: .
+      dockerfile: gulp/Dockerfile
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./gulp:/app
+  vite:
+    build:
+      context: .
+      dockerfile: Vite/Dockerfile
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./Vite/vite-project:/app
+    ports:
+      - "888:8888"
+
+

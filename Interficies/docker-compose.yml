@@ -1,0 +1,37 @@
+name: DIW
+services:
+  node:
+    image: node:20
+    tty: true
+    stdin_open: true # perque no s'aturi el servei de node
+    working_dir: /app
+    volumes:
+      - ./ex1:/app #ruta local : ruta container
+  node-vite:
+    image: node:20
+    tty: true
+    stdin_open: true # perque no s'aturi el servei de node
+    working_dir: /app
+    volumes:
+      - ./exVite:/app #ruta local : ruta container
+    ports:
+      - "5173:5173"
+  php:
+    image: php:8.2-apache
+    tty: true
+    stdin_open: true
+    working_dir: /var/www/html
+    volumes:
+      - ./:/var/www/html
+    ports:
+      - "8080:80"
+  node-cordova:
+    build: 
+      context : .
+      dockerfile: Dockerfile
+    tty: true
+    stdin_open: true 
+    working_dir: /app
+    volumes:
+      - ./exCordova:/app 
+  

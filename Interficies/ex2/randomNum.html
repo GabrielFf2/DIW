@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>numRandom</title>
+</head>
+<body>
+<script>
+    const numMax = 2 ;
+    const numMin = 1 ;
+
+    const randomNum = Math.floor(Math.random() * (numMax - numMin + 1) ) + numMin ;
+
+    const result = (randomNum===1)?'cara':'creu';
+
+    if (result==='cara'){
+        console.log("Ha sortit Cara : has guanyat")
+    }else {
+        console.log("Ha sortit Creu : has Perdut")
+    }
+
+</script>
+</body>
+</html>
+
+

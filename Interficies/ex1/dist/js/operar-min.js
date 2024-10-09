@@ -1,0 +1,1 @@
+const x=5,y=9;function suma(n,u){return n+x+(u-y)}function suma(n,u){return n-u}
