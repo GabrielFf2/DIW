@@ -18,5 +18,21 @@ services:
       - ./Vite/vite-project:/app
     ports:
       - "888:8888"
-
+  pwa:
+    image: node:20
+    tty: true
+    stdin_open: true
+    working_dir: /app
+    volumes:
+      - ./pwa:/app
+    ports:
+      - "880:8888"
+  cordova:
+    build:
+      context: .
+      dockerfile: cordova/Dockerfile
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./cordova:/app
 
