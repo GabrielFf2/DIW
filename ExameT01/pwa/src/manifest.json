@@ -1,0 +1,37 @@
+{
+  "short_name": "Examen PLL",
+  "name": "Examen Politècnic de Llevant" ,
+  "icons": [
+    {
+      "src": "./img/192x192.jpg",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./img/512x512.jpg",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "id": "./index.html",
+  "start_url": "./index.html",
+  "background_color": "#7DDA58",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#f35525",
+  "description": "",
+  "screenshots": [
+    {
+      "src": "./img/320x320.jpg",
+      "type": "image/png",
+      "sizes": "320x320",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "./img/512x512.jpg",
+      "type": "image/jpg",
+      "sizes": "512x512",
+      "form_factor": "wide"
+    }
+  ]
+}

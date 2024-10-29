@@ -1,0 +1,27 @@
+name: examen
+services:
+  gulpexamen:
+    build:
+      context: .
+      dockerfile: gulp/Dockerfile
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./gulp:/app
+  viteexamen:
+    build:
+      context: .
+      dockerfile: vite/Dockerfile
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./vite:/app
+  cordovaexamen:
+    build:
+      context: .
+      dockerfile: cordova/Dockerfile
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./cordova:/app
+

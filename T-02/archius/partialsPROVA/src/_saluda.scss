@@ -1,0 +1,9 @@
+@use "variables" as v ;
+#saluda{
+  color: v.$lila;
+}
+.saluda{
+  color: v.$gris;
+}
+
+

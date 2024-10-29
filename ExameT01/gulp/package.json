@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat-css": "^1.2.0",
+    "gulp-concat-flatten": "^3.0.1",
+    "gulp-minify.js": "^1.0.11"
+  },
+  "dependencies": {
+    "gulp-rename": "^2.0.0",
+    "gulp-sort": "^2.0.0"
+  }
+}

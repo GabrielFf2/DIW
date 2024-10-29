@@ -1,0 +1,12 @@
+name: tema2
+services:
+  vitescss:
+    build:
+      context: .
+      dockerfile: SCSS_CSS/Dockerfile
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./SCSS_CSS:/app
+    ports:
+      - "8888:8888"

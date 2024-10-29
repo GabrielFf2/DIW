@@ -1,0 +1,11 @@
+name: Repaso-Examen
+services:
+  gulp:
+    build: 
+      context: ./gulp
+      dockerfile: gulp/Dockerfile
+    working_dir: /app
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./gulp/app:/app

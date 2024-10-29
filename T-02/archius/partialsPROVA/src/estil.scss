@@ -1,0 +1,40 @@
+@use "saluda";
+@use "paragrafs";
+
+
+
+@for $i from 0 through 25{
+  @for $x from 0 through 25{
+    @for $z from 0 through 25{
+      .color-#{$i*10}-#{$x*10}-#{$z*10}{
+        color: rgb($i*10,$x*10,$z*10);
+      }
+      .bg-#{$i*10}-#{$x*10}-#{$z*10}{
+        background-color: rgb($i*10,$x*10,$z*10);
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

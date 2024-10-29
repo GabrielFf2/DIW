@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            background-color: blue;
+            height: 50px;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 600px){
+            div{
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+<p></p>
+<div>Hola</div>
+<script>
+    setInterval(function (){
+        const deviceRatio = window.devicePixelRatio;
+        const width = window.innerWidth;
+
+        document.querySelector("p").innerHTML=`Device Pixel Ratio : ${deviceRatio} - Width : ${width}`
+    },100)
+
+</script>
+
+</body>
+</html>

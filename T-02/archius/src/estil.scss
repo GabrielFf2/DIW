@@ -1,0 +1,53 @@
+@use "saluda";
+@use "paragrafs";
+@use "lato";
+@font-face {
+  font-family: "prova";
+  src: url("./assets/Londrina_Sketch/LondrinaSketch-Regular.ttf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.nosi{
+  font-family: "Nosifer", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+@for $i from 0 through 25{
+  @for $x from 0 through 25{
+    @for $z from 0 through 25{
+      .color-#{$i*10}-#{$x*10}-#{$z*10}{
+        color: rgb($i*10,$x*10,$z*10);
+      }
+      .bg-#{$i*10}-#{$x*10}-#{$z*10}{
+        background-color: rgb($i*10,$x*10,$z*10);
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+@use "variables" as v ;
+p{
+  color: v.$verd;
+}
+
+div{
+  p {
+    color: v.$lila;
+  }
+  >p {
+    color: cyan;
+  }
+}
+
