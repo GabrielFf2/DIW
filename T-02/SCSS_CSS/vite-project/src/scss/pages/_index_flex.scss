@@ -1,0 +1,95 @@
+@use "../variables" as v;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column ;
+
+  header.header{
+    display: flex;
+    justify-content: center;
+    background:  v.$kittensSecundary;
+
+    .wrapper{
+      width: 1000px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h1{
+        order: 1;
+      }
+      nav{
+        order: 2;
+
+        ul{
+          display: flex;
+          gap: 0 10px;
+          list-style: none;
+        }
+      }
+    }
+  }
+
+  .subcontent{
+    display: flex;
+    justify-content: center;
+    .wrapper{
+      width: 1000px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 25px 0 ;
+      li{
+        list-style: none;
+      }
+      }
+  }
+
+  .content{
+    display: flex;
+    justify-content: center;
+    background:  v.$kittensBackground;
+    .wrapper{
+      padding: 15px 0;
+      width: 1000px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      h1{
+        order: 1;
+      }
+      form{
+        order: 2;
+      }
+      ul{
+        order: 3;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        li{
+          padding: 15px 0;
+          width: 250px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          img{
+            padding: 10px;
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+          }
+        }
+
+      }
+    }
+  }
+  .footer{
+    background:  v.$kittensPrimary;
+  }
+}

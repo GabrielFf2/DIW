@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes marioMove {
+    0% {
+        object-position: 0% 57.5%;
+    }
+    33% {
+        object-position: 8.3% 57.5%;
+    }
+    66% {
+        object-position: 16.6% 57.5%;
+    }
+    100% {
+        object-position: 25% 57.5%;
+    }
+}
+
+#tuberia {
+    position: fixed;
+    bottom: 0;
+    left: 50px;
+    height: 150px;
+    width: 150px;
+}
+
+#container{
+    position: fixed;
+    bottom: 150px;
+    left: 90px;
+}
+#container img {
+    width: 70px;
+    height: 80px;
+    object-fit: none;
+    animation: marioMove 1s steps(1) infinite;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

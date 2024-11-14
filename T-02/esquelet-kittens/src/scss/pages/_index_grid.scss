@@ -1,0 +1,117 @@
+@use "../variables" as v;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  width: 100%;
+
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+          "header"
+          "content"
+          "subcontent"
+          "footer";
+
+  header.header {
+    display: grid;
+    background: v.$kittensSecundary;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+
+    .wrapper {
+      width: 1000px;
+      display: grid;
+      grid-template-columns: auto 300px;
+      grid-template-rows: auto;
+
+      h1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+      }
+
+      nav {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        display: grid;
+        justify-content: right;
+        align-items: center;
+
+        ul {
+          display: grid;
+          grid-template-columns: auto;
+          grid-template-rows: auto;
+          gap: 0 10px;
+          list-style: none;
+
+          li {
+            grid-row: 1/2;
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    background:  v.$kittensBackground;
+    margin-top: 10px;
+    padding: 10px 0;
+
+
+    .wrapper {
+      width: 1000px;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: 50px auto;
+      form {
+        justify-self: end;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        align-self: center;
+      }
+      h1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+      }
+      ul{
+        grid-column: 1/3;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto;
+        list-style: none;
+        img{
+          padding: 10px;
+          width: 250px;
+          height: 250px;
+          object-fit: cover;
+        }
+      }
+    }
+
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
