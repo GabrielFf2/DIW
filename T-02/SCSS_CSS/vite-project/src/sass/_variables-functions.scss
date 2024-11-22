@@ -1,0 +1,13 @@
+$vermell: #e74c3c;
+$vermellDark: adjust-color($vermell, $lightness: -25%);
+$vermellLight: adjust-color($vermell, $lightness: 10%);
+$vermellSaturate: adjust-color($vermell, $saturation: 10%);
+
+
+
+@mixin cercle($radi , $color){
+  width: ($radi*2);
+  height: ($radi*2);
+  border-radius: 50%;
+  background: $color;
+}

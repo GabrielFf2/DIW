@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aac3a53b-edb9-4c18-be6a-88f928bbdf05" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/T-02/SCSS_CSS/vite-project/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/T-02/SCSS_CSS/vite-project/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/T-02/SCSS_CSS/vite-project/src/js/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/T-02/SCSS_CSS/vite-project/src/js/application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/T-02/SCSS_CSS/vite-project/src/scss/pages/_index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/T-02/SCSS_CSS/vite-project/src/scss/pages/_index.scss" afterDir="false" />
-    </list>
+    <list default="true" id="aac3a53b-edb9-4c18-be6a-88f928bbdf05" name="Changes" comment="a" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,7 +62,7 @@
     "git-widget-placeholder": "main",
     "javascript.nodejs.core.library.configured.version": "20.17.0",
     "javascript.nodejs.core.library.typings.version": "20.16.11",
-    "last_opened_file_path": "/home/gabri/Daw2/DWEC/T2",
+    "last_opened_file_path": "/home/gabri/Daw2/DWES",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -196,10 +191,24 @@
       <workItem from="1730237177028" duration="599000" />
       <workItem from="1730286386310" duration="6714000" />
       <workItem from="1730361783298" duration="30000" />
+      <workItem from="1731586027128" duration="29000" />
     </task>
+    <task id="LOCAL-00001" summary="a">
+      <option name="closed" value="true" />
+      <created>1731586038513</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731586038513</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="a" />
+    <option name="LAST_COMMIT_MESSAGE" value="a" />
   </component>
 </project>

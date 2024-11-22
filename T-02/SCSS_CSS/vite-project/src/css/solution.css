@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+
+#emailme {
+    position: fixed;
+    bottom: 20px ;
+    right: 20px;
+
+
+}
+#emailme img {
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+body {
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    width: 590px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+        "f"
+        "e"
+        "d"
+        "c"
+        "a"
+        "b";
+
+    .box-1 {
+        grid-area: a;
+        background: red;
+    }
+
+    .box-2 {
+        grid-area: b;
+        background: green;
+    }
+
+    .box-3 {
+        grid-area: c;
+
+        background: blue;
+    }
+
+    .box-4 {
+        grid-area: d;
+        background: yellow;
+        #gallery{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            article{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                width: 50%;
+                img {
+                    filter: grayscale(100%);
+                    border-radius: 50%;
+                    padding: 10px;
+                    width: 200px;
+                    height: 200px;
+                    object-fit: cover;
+                    transition: filter 3a ease;
+                }
+                img:hover {
+                    filter: grayscale(0%);
+                }
+            }
+
+        }
+    }
+
+    .box-5 {
+        grid-area: e;
+
+        background: orange;
+    }
+
+    .box-6 {
+        grid-area: f;
+
+        background: pink;
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+
+    .container {
+        width: 1000px;
+        display: grid;
+        grid-template-columns: 250px 150px 600px;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+        "a a b"
+        "c d d"
+        "e d d"
+        "e f f";
+        gap: 5px;
+    }
+}
+
+

@@ -2,8 +2,6 @@ import { defineConfig } from 'vite';
 
 
 export default defineConfig({
-    root: './src',
-
     server:{
         port : 8888,
         strictPort : true,
@@ -11,7 +9,8 @@ export default defineConfig({
     },
     build:{
         outDir: '../dist',
-        emptyOutDir : true
+        emptyOutDir : true,
+        minify: false
     }
 
 

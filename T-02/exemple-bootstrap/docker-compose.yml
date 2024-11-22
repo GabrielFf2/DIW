@@ -1,0 +1,12 @@
+name: tema2
+services:
+  vitescss:
+    build:
+      context: .
+      dockerfile: 2/Dockerfile
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./2:/app
+    ports:
+      - "8888:8888"
